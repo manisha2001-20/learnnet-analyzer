@@ -197,3 +197,36 @@ def test_api_add_video_and_duplicates(client, tmp_path):
     assert saved[0]["educator"] == "New Teacher" and saved[0]["synthetic"] is False
     assert client.post("/api/videos", json={"educator": "x", "title": "y"}).status_code == 422
     assert client.post("/api/videos", json={**body, "transcript": "too short"}).status_code == 422
+
+
+# ---------------------------------------------------------------- YouTube fetching (offline, mocked library)
+def test_fetch_youtube_transcript_new_and_old_api(monkeypatch):
+    import types
+
+    import youtube_transcript_api
+
+    from learnnet.transcripts import fetch_youtube_transcript
+
+    class NewApi:  # >= 1.0 instance API
+        def fetch(self, vid, languages):
+            assert vid == "aircAruvnKk"
+            return [types.SimpleNamespace(text="hello"), types.SimpleNamespace(text="world")]
+
+    monkeypatch.setattr(youtube_transcript_api, "YouTubeTranscriptApi", NewApi)
+    assert fetch_youtube_transcript("https://youtu.be/aircAruvnKk") == "hello world"
+
+    class OldApi:  # < 1.0 class API
+        @staticmethod
+        def get_transcript(vid, languages):
+            return [{"text": "old"}, {"text": "style"}]
+
+    monkeypatch.setattr(youtube_transcript_api, "YouTubeTranscriptApi", OldApi)
+    assert fetch_youtube_transcript("aircAruvnKk") == "old style"
+
+    class Broken:
+        def fetch(self, vid, languages):
+            raise RuntimeError("TranscriptsDisabled")
+
+    monkeypatch.setattr(youtube_transcript_api, "YouTubeTranscriptApi", Broken)
+    with pytest.raises(TranscriptError, match="No transcript"):
+        fetch_youtube_transcript("aircAruvnKk")

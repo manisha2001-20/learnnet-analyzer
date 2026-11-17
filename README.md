@@ -44,12 +44,13 @@ learnnet-analyzer/
 │   ├── api/main.py          # FastAPI app (also serves frontend/dist)
 │   ├── scripts/make_sample_corpus.py
 │   ├── data/sample_corpus.json
-│   ├── tests/               # pytest (26 tests)
+│   ├── tests/               # pytest (27 tests)
 │   └── requirements.txt
 ├── frontend/                # React + Vite dashboard
 │   ├── src/pages/*.jsx, src/components/ui.jsx, src/api.js, src/utils.js (+ utils.test.js)
 │   └── package.json
 ├── docs/ARCHITECTURE.md, docs/screenshots/
+├── scripts/e2e_smoke.py     # Playwright browser smoke test
 ├── run.ps1, run.sh, .env.example
 ```
 
@@ -98,11 +99,21 @@ The API docs are at http://localhost:8000/docs.
 ## Tests
 
 ```bash
-cd backend && pytest          # 26 tests: cleaning, URL parsing, concepts, DAG validity, paths, clustering, scores, API
+cd backend && pytest          # 27 tests: cleaning, URL parsing, YouTube fetch (mocked), concepts, DAG validity, paths, clustering, scores, API
 cd frontend && npm test       # 4 Vitest unit tests for UI utilities
 ```
 
 Backend tests use the offline TF-IDF embedder, so they need no model download.
+
+Browser end-to-end smoke test (optional: `pip install playwright && playwright install chromium`). With the app running on :8000:
+
+```bash
+python scripts/e2e_smoke.py http://localhost:8000      # all 7 pages, navigation, forms, mobile menu, no JS/API errors
+```
+
+**Verified on 2026-11-17:**
+- Live caption fetching works for real YouTube videos (two 3Blue1Brown lectures, about 3,400 words each). They were added through `POST /api/videos` and analysed with Sentence-Transformers.
+- The browser smoke test passes.
 
 ## Results on the synthetic corpus
 

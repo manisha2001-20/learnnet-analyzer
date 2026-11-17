@@ -6,7 +6,7 @@ pandas==2.2.3
 scikit-learn==1.5.2
 networkx==3.4.2
 sentence-transformers==3.3.1
-youtube-transcript-api==0.6.3
+youtube-transcript-api==1.2.3
 python-multipart==0.0.19
 python-dotenv==1.0.1
 pytest==8.3.4

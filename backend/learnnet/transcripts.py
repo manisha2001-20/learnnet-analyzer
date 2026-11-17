@@ -86,7 +86,12 @@ def fetch_youtube_transcript(url_or_id: str, languages: tuple[str, ...] = ("en",
     except ImportError as exc:  # pragma: no cover
         raise TranscriptError("youtube-transcript-api is not installed") from exc
     try:
-        parts = YouTubeTranscriptApi.get_transcript(vid, languages=list(languages))
+        if hasattr(YouTubeTranscriptApi, "get_transcript"):  # youtube-transcript-api < 1.0
+            parts = [p["text"] for p in YouTubeTranscriptApi.get_transcript(vid, languages=list(languages))]
+        else:                                                # >= 1.0: instance API returning snippets
+            parts = [snippet.text for snippet in YouTubeTranscriptApi().fetch(vid, languages=list(languages))]
     except Exception as exc:  # the library raises many specific exception types
         raise TranscriptError(f"No transcript available for {vid}: {type(exc).__name__}") from exc
-    return " ".join(p["text"] for p in parts)
+    if not parts:
+        raise TranscriptError(f"Transcript for {vid} is empty.")
+    return " ".join(parts)
