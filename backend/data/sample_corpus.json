@@ -1,0 +1,432 @@
+[
+ {
+  "video_id": "data-01",
+  "educator": "Data Dojo",
+  "title": "Python basics",
+  "published": "2023-01-29",
+  "views": 8138,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hey everyone, welcome back to Data Dojo. In this video we look at python basics. A variable stores a value, and every value in Python has a data type such as integer, float or string. Alright, so an if statement lets the program make decisions based on a condition. Libraries like numpy and pandas extend Python with tools for numerical computing and data analysis. Functions let us reuse code, so we define a function once with def and call it many times. Alright, so python is a general purpose programming language that is popular in data science. Indentation matters in Python because it defines which statements belong to a loop or a function. So that is a quick summary of python basics. If this helped, practise the code yourself and see you in the next lesson."
+ },
+ {
+  "video_id": "data-02",
+  "educator": "Data Dojo",
+  "title": "NumPy arrays",
+  "published": "2023-02-24",
+  "views": 4479,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hey everyone, welcome back to Data Dojo. In this video we look at numpy arrays. Before we start, remember what we covered about python basics. Python is a general purpose programming language that is popular in data science. Broadcasting lets numpy combine arrays of different shapes in a single operation. Alright, so matrix multiplication with numpy is the foundation of linear algebra in machine learning. Random number generation in numpy is useful for simulations and for initializing model weights. The shape of an array tells us how many rows and columns it has, and reshape changes it. Alright, so indexing and slicing let us select parts of an array, just like with Python lists. NumPy gives us the array, a fast container for numbers that is much quicker than a Python list. So that is a quick summary of numpy arrays. If this helped, practise the code yourself and see you in the next lesson."
+ },
+ {
+  "video_id": "data-03",
+  "educator": "Data Dojo",
+  "title": "Pandas dataframes",
+  "published": "2023-03-07",
+  "views": 11794,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hey everyone, welcome back to Data Dojo. In this video we look at pandas dataframes. Before we start, remember what we covered about numpy arrays. NumPy gives us the array, a fast container for numbers that is much quicker than a Python list. Groupby splits the data into groups, applies a function such as the mean, and combines the results. Alright, so each column of a dataframe is built on a numpy array, so vectorized operations are fast. Missing values are common in real data, and pandas lets us drop them or fill them in. We load a CSV file into a dataframe with read_csv and inspect it with head and describe. Alright, so a pandas dataframe is a table of rows and columns, similar to a spreadsheet. Filtering rows with a boolean condition is one of the most common pandas operations. So that is a quick summary of pandas dataframes. If this helped, practise the code yourself and see you in the next lesson."
+ },
+ {
+  "video_id": "data-04",
+  "educator": "Data Dojo",
+  "title": "Data visualization",
+  "published": "2023-03-24",
+  "views": 11272,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hey everyone, welcome back to Data Dojo. In this video we look at data visualization. Before we start, remember what we covered about pandas dataframes. A pandas dataframe is a table of rows and columns, similar to a spreadsheet. Matplotlib and seaborn are the most common plotting libraries in Python. Alright, so we often plot a pandas dataframe directly to explore the data quickly. Good charts have clear labels, a sensible scale and as little clutter as possible. A scatter plot shows the relationship between two variables and can reveal correlation. Alright, so a histogram shows the distribution of a single variable. A box plot summarises the median, the quartiles and the outliers of a variable. So that is a quick summary of data visualization. If this helped, practise the code yourself and see you in the next lesson."
+ },
+ {
+  "video_id": "data-05",
+  "educator": "Data Dojo",
+  "title": "Descriptive statistics",
+  "published": "2023-04-20",
+  "views": 6719,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hey everyone, welcome back to Data Dojo. In this video we look at descriptive statistics. Before we start, remember what we covered about data visualization. Data visualization helps us understand a dataset before we build any model. Outliers can pull the mean far away from the median, so the median is more robust. Alright, so the normal distribution is the bell shaped curve that appears again and again in statistics. A distribution describes how often each value occurs in the data. The mean is the average value, while the median is the middle value when the data is sorted. Alright, so variance and standard deviation measure how spread out the data is around the mean. Correlation measures how strongly two variables move together, from minus one to plus one. So that is a quick summary of descriptive statistics. If this helped, practise the code yourself and see you in the next lesson."
+ },
+ {
+  "video_id": "data-06",
+  "educator": "Data Dojo",
+  "title": "Probability",
+  "published": "2023-05-02",
+  "views": 20170,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hey everyone, welcome back to Data Dojo. In this video we look at probability. Before we start, remember what we covered about descriptive statistics. The mean is the average value, while the median is the middle value when the data is sorted. Expected value is the long run average of a random variable. Alright, so bayes theorem lets us update a probability when we observe new evidence. A random variable maps outcomes of an experiment to numbers, and it has a distribution. Conditional probability is the probability of an event given that another event has happened. Alright, so probability is the language that machine learning models use to express uncertainty. Probability measures how likely an event is, on a scale from zero to one. So that is a quick summary of probability. If this helped, practise the code yourself and see you in the next lesson."
+ },
+ {
+  "video_id": "data-07",
+  "educator": "Data Dojo",
+  "title": "Linear regression",
+  "published": "2023-05-26",
+  "views": 4358,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hey everyone, welcome back to Data Dojo. In this video we look at linear regression. Before we start, remember what we covered about probability. Probability measures how likely an event is, on a scale from zero to one. The residual is the difference between the actual value and the predicted value. Alright, so linear regression fits a straight line that predicts a continuous target from input features. The best weights can be found with the normal equation or with gradient descent. Linear regression assumes a roughly linear relationship, which a scatter plot can check. Alright, so the model learns a weight for each feature and a bias term, also called the intercept. R squared tells us how much of the variance in the target the model explains. So that is a quick summary of linear regression. If this helped, practise the code yourself and see you in the next lesson."
+ },
+ {
+  "video_id": "data-08",
+  "educator": "Data Dojo",
+  "title": "Gradient descent",
+  "published": "2023-06-20",
+  "views": 4020,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hey everyone, welcome back to Data Dojo. In this video we look at gradient descent. Before we start, remember what we covered about linear regression. Linear regression fits a straight line that predicts a continuous target from input features. The gradient points in the direction of steepest increase, so we move in the opposite direction. Alright, so gradient descent is an optimization algorithm that minimizes a loss function step by step. Stochastic gradient descent uses a small batch of data for each update, which is faster. A loss curve that goes down smoothly tells us that the optimization is working. Alright, so if the learning rate is too large the loss can diverge, and if it is too small training is slow. Gradient descent trains linear regression, logistic regression and neural networks alike. So that is a quick summary of gradient descent. If this helped, practise the code yourself and see you in the next lesson."
+ },
+ {
+  "video_id": "data-09",
+  "educator": "Data Dojo",
+  "title": "Logistic regression",
+  "published": "2023-07-10",
+  "views": 23165,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hey everyone, welcome back to Data Dojo. In this video we look at logistic regression. Before we start, remember what we covered about gradient descent. Gradient descent is an optimization algorithm that minimizes a loss function step by step. Logistic regression is a strong baseline before trying more complex classifiers. Alright, so despite its name, logistic regression is used for classification and not for regression. We train logistic regression by minimizing the cross entropy loss with gradient descent. Logistic regression is a classification model that predicts the probability of a class. Alright, so the weights of logistic regression can be interpreted as changes in the log odds. A decision threshold, often 0.5, turns the predicted probability into a class label. So that is a quick summary of logistic regression. If this helped, practise the code yourself and see you in the next lesson."
+ },
+ {
+  "video_id": "learn-01",
+  "educator": "Learn with Meera",
+  "title": "Python basics",
+  "published": "2023-02-24",
+  "views": 31585,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hello and welcome, I am Meera. In this video we look at python basics. A variable stores a value, and every value in Python has a data type such as integer, float or string. Now, we use lists to store an ordered collection of values and dictionaries to store key value pairs. Python is a general purpose programming language that is popular in data science. Libraries like numpy and pandas extend Python with tools for numerical computing and data analysis. Now, an if statement lets the program make decisions based on a condition. A for loop repeats a block of code for every item in a list. So that is a quick summary of python basics. Try the exercise in the description and let me know your questions."
+ },
+ {
+  "video_id": "learn-02",
+  "educator": "Learn with Meera",
+  "title": "NumPy arrays",
+  "published": "2023-03-08",
+  "views": 22324,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hello and welcome, I am Meera. In this video we look at numpy arrays. Before we start, remember what we covered about python basics. Python is a general purpose programming language that is popular in data science. Random number generation in numpy is useful for simulations and for initializing model weights. Now, matrix multiplication with numpy is the foundation of linear algebra in machine learning. Vectorized operations apply a calculation to every element of an array without writing a for loop. The shape of an array tells us how many rows and columns it has, and reshape changes it. Now, broadcasting lets numpy combine arrays of different shapes in a single operation. Indexing and slicing let us select parts of an array, just like with Python lists. So that is a quick summary of numpy arrays. Try the exercise in the description and let me know your questions."
+ },
+ {
+  "video_id": "learn-03",
+  "educator": "Learn with Meera",
+  "title": "Pandas dataframes",
+  "published": "2023-04-01",
+  "views": 5751,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hello and welcome, I am Meera. In this video we look at pandas dataframes. Before we start, remember what we covered about numpy arrays. NumPy gives us the array, a fast container for numbers that is much quicker than a Python list. Data cleaning with pandas usually takes more time than building the machine learning model. Now, groupby splits the data into groups, applies a function such as the mean, and combines the results. Each column of a dataframe is built on a numpy array, so vectorized operations are fast. A pandas dataframe is a table of rows and columns, similar to a spreadsheet. Now, filtering rows with a boolean condition is one of the most common pandas operations. We load a CSV file into a dataframe with read_csv and inspect it with head and describe. So that is a quick summary of pandas dataframes. Try the exercise in the description and let me know your questions."
+ },
+ {
+  "video_id": "learn-04",
+  "educator": "Learn with Meera",
+  "title": "Data visualization",
+  "published": "2023-04-18",
+  "views": 8209,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hello and welcome, I am Meera. In this video we look at data visualization. Before we start, remember what we covered about pandas dataframes. A pandas dataframe is a table of rows and columns, similar to a spreadsheet. A scatter plot shows the relationship between two variables and can reveal correlation. Now, a histogram shows the distribution of a single variable. A box plot summarises the median, the quartiles and the outliers of a variable. Data visualization helps us understand a dataset before we build any model. Now, good charts have clear labels, a sensible scale and as little clutter as possible. We often plot a pandas dataframe directly to explore the data quickly. So that is a quick summary of data visualization. Try the exercise in the description and let me know your questions."
+ },
+ {
+  "video_id": "learn-05",
+  "educator": "Learn with Meera",
+  "title": "Descriptive statistics",
+  "published": "2023-05-02",
+  "views": 7995,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hello and welcome, I am Meera. In this video we look at descriptive statistics. Before we start, remember what we covered about data visualization. Data visualization helps us understand a dataset before we build any model. The mean is the average value, while the median is the middle value when the data is sorted. Now, variance and standard deviation measure how spread out the data is around the mean. Correlation measures how strongly two variables move together, from minus one to plus one. A distribution describes how often each value occurs in the data. Now, outliers can pull the mean far away from the median, so the median is more robust. The normal distribution is the bell shaped curve that appears again and again in statistics. So that is a quick summary of descriptive statistics. Try the exercise in the description and let me know your questions."
+ },
+ {
+  "video_id": "learn-06",
+  "educator": "Learn with Meera",
+  "title": "Probability",
+  "published": "2023-05-14",
+  "views": 17252,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hello and welcome, I am Meera. In this video we look at probability. Before we start, remember what we covered about descriptive statistics. The mean is the average value, while the median is the middle value when the data is sorted. Bayes theorem lets us update a probability when we observe new evidence. Now, a random variable maps outcomes of an experiment to numbers, and it has a distribution. Probability measures how likely an event is, on a scale from zero to one. Independent events do not influence each other, so their probabilities multiply. Now, expected value is the long run average of a random variable. Probability is the language that machine learning models use to express uncertainty. So that is a quick summary of probability. Try the exercise in the description and let me know your questions."
+ },
+ {
+  "video_id": "learn-07",
+  "educator": "Learn with Meera",
+  "title": "Model evaluation",
+  "published": "2023-06-02",
+  "views": 10462,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hello and welcome, I am Meera. In this video we look at model evaluation. Before we start, remember what we covered about overfitting and regularization. Overfitting happens when a model memorizes the training data and fails on new data. The F1 score is the harmonic mean of precision and recall. Now, the ROC curve and the area under it summarise performance across all decision thresholds. The confusion matrix counts true positives, false positives, true negatives and false negatives. Accuracy can be misleading when the classes are imbalanced. Now, precision tells us how many predicted positives are correct, and recall tells us how many positives we found. Cross validation trains and tests the model several times on different folds of the data. So that is a quick summary of model evaluation. Try the exercise in the description and let me know your questions."
+ },
+ {
+  "video_id": "learn-08",
+  "educator": "Learn with Meera",
+  "title": "Decision trees and random forests",
+  "published": "2023-06-13",
+  "views": 7478,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hello and welcome, I am Meera. In this video we look at decision trees and random forests. Before we start, remember what we covered about model evaluation. We split the data into a training set and a test set to estimate performance on new data. A decision tree splits the data with a sequence of yes or no questions about the features. Now, deep decision trees overfit easily, so we limit their depth. Each split is chosen to make the groups purer, measured with gini impurity or entropy. Gradient boosting builds trees one after another, each correcting the errors of the previous ones. Now, averaging many trees reduces variance, which is why random forests overfit less. Feature importance from a random forest shows which features the model relies on. So that is a quick summary of decision trees and random forests. Try the exercise in the description and let me know your questions."
+ },
+ {
+  "video_id": "learn-09",
+  "educator": "Learn with Meera",
+  "title": "K-means clustering",
+  "published": "2023-07-05",
+  "views": 2589,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hello and welcome, I am Meera. In this video we look at k-means clustering. Before we start, remember what we covered about decision trees and random forests. A decision tree splits the data with a sequence of yes or no questions about the features. We repeat the assignment and update steps until the centroids stop moving. Now, k-means uses euclidean distance, so features should be scaled first. Choosing k is hard, and the elbow method and the silhouette score can help. Clustering is used for customer segmentation and for grouping similar documents. Now, k-means can get stuck in a poor solution, so we run it several times with different starts. K-means assigns every point to the nearest of k centroids and then moves each centroid to the mean of its points. So that is a quick summary of k-means clustering. Try the exercise in the description and let me know your questions."
+ },
+ {
+  "video_id": "learn-10",
+  "educator": "Learn with Meera",
+  "title": "Principal component analysis",
+  "published": "2023-07-18",
+  "views": 4700,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Hello and welcome, I am Meera. In this video we look at principal component analysis. Before we start, remember what we covered about k-means clustering. Clustering is unsupervised learning, because there are no labels to predict. The first principal component points in the direction of the largest variance. Now, pCA relies on linear algebra, specifically the eigenvectors of the covariance matrix. PCA is useful for visualizing high dimensional data in two dimensions. The explained variance ratio tells us how much information each component keeps. Now, pCA finds new axes called principal components that are combinations of the original features. We standardize features before PCA so that large scale features do not dominate. So that is a quick summary of principal component analysis. Try the exercise in the description and let me know your questions."
+ },
+ {
+  "video_id": "the-01",
+  "educator": "The Math Lab",
+  "title": "Descriptive statistics",
+  "published": "2023-03-09",
+  "views": 3529,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to The Math Lab. In this video we look at descriptive statistics. Before we start, remember what we covered about data visualization. Data visualization helps us understand a dataset before we build any model. The normal distribution is the bell shaped curve that appears again and again in statistics. Mathematically speaking, the mean is the average value, while the median is the middle value when the data is sorted. Variance and standard deviation measure how spread out the data is around the mean. Outliers can pull the mean far away from the median, so the median is more robust. Mathematically speaking, percentiles and quartiles tell us where a value sits within a distribution. A distribution describes how often each value occurs in the data. So that is a quick summary of descriptive statistics. Next time we will build on this result."
+ },
+ {
+  "video_id": "the-02",
+  "educator": "The Math Lab",
+  "title": "Probability",
+  "published": "2023-04-02",
+  "views": 37037,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to The Math Lab. In this video we look at probability. Before we start, remember what we covered about descriptive statistics. The mean is the average value, while the median is the middle value when the data is sorted. Conditional probability is the probability of an event given that another event has happened. Mathematically speaking, independent events do not influence each other, so their probabilities multiply. Expected value is the long run average of a random variable. Probability measures how likely an event is, on a scale from zero to one. Mathematically speaking, bayes theorem lets us update a probability when we observe new evidence. Probability is the language that machine learning models use to express uncertainty. So that is a quick summary of probability. Next time we will build on this result."
+ },
+ {
+  "video_id": "the-03",
+  "educator": "The Math Lab",
+  "title": "Linear regression",
+  "published": "2023-04-27",
+  "views": 3423,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to The Math Lab. In this video we look at linear regression. Before we start, remember what we covered about probability. Probability measures how likely an event is, on a scale from zero to one. We measure the error with the mean squared error, the average of the squared residuals. Mathematically speaking, linear regression assumes a roughly linear relationship, which a scatter plot can check. The residual is the difference between the actual value and the predicted value. Linear regression fits a straight line that predicts a continuous target from input features. Mathematically speaking, the model learns a weight for each feature and a bias term, also called the intercept. The best weights can be found with the normal equation or with gradient descent. So that is a quick summary of linear regression. Next time we will build on this result."
+ },
+ {
+  "video_id": "the-04",
+  "educator": "The Math Lab",
+  "title": "Gradient descent",
+  "published": "2023-05-07",
+  "views": 13032,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to The Math Lab. In this video we look at gradient descent. Before we start, remember what we covered about linear regression. Linear regression fits a straight line that predicts a continuous target from input features. If the learning rate is too large the loss can diverge, and if it is too small training is slow. Mathematically speaking, the gradient points in the direction of steepest increase, so we move in the opposite direction. Gradient descent trains linear regression, logistic regression and neural networks alike. Gradient descent is an optimization algorithm that minimizes a loss function step by step. Mathematically speaking, the learning rate controls the size of each step, and choosing it well is important. Stochastic gradient descent uses a small batch of data for each update, which is faster. So that is a quick summary of gradient descent. Next time we will build on this result."
+ },
+ {
+  "video_id": "the-05",
+  "educator": "The Math Lab",
+  "title": "Principal component analysis",
+  "published": "2023-05-28",
+  "views": 20627,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to The Math Lab. In this video we look at principal component analysis. Before we start, remember what we covered about k-means clustering. Clustering is unsupervised learning, because there are no labels to predict. PCA is useful for visualizing high dimensional data in two dimensions. Mathematically speaking, principal component analysis, or PCA, reduces the number of dimensions while keeping most of the variance. PCA relies on linear algebra, specifically the eigenvectors of the covariance matrix. The first principal component points in the direction of the largest variance. Mathematically speaking, we standardize features before PCA so that large scale features do not dominate. PCA finds new axes called principal components that are combinations of the original features. So that is a quick summary of principal component analysis. Next time we will build on this result."
+ },
+ {
+  "video_id": "the-06",
+  "educator": "The Math Lab",
+  "title": "Neural networks",
+  "published": "2023-06-13",
+  "views": 8069,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to The Math Lab. In this video we look at neural networks. Before we start, remember what we covered about principal component analysis. Principal component analysis, or PCA, reduces the number of dimensions while keeping most of the variance. A network with hidden layers can approximate very complex functions. Mathematically speaking, logistic regression is like a neural network with a single neuron and a sigmoid activation. A neural network is made of layers of neurons, and each neuron computes a weighted sum followed by an activation function. Neural networks need a lot of data and are prone to overfitting, so regularization such as dropout helps. Mathematically speaking, we train neural networks with gradient descent by minimizing a loss function. Activation functions such as relu and sigmoid let the network learn non linear patterns. So that is a quick summary of neural networks. Next time we will build on this result."
+ },
+ {
+  "video_id": "the-07",
+  "educator": "The Math Lab",
+  "title": "Backpropagation",
+  "published": "2023-06-23",
+  "views": 3133,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to The Math Lab. In this video we look at backpropagation. Before we start, remember what we covered about neural networks. A neural network is made of layers of neurons, and each neuron computes a weighted sum followed by an activation function. Vanishing gradients make deep networks hard to train with sigmoid activations. Mathematically speaking, it applies the chain rule from calculus, layer by layer, from the output back to the input. Backpropagation computes the gradient of the loss with respect to every weight in a neural network. Relu activations and careful weight initialization help gradients flow through deep networks. Mathematically speaking, once we have the gradients, gradient descent updates the weights. The forward pass computes predictions, and the backward pass computes gradients. So that is a quick summary of backpropagation. Next time we will build on this result."
+ },
+ {
+  "video_id": "code-01",
+  "educator": "Code and Coffee",
+  "title": "NumPy arrays",
+  "published": "2023-04-17",
+  "views": 6435,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Grab a coffee, today we are coding. In this video we look at numpy arrays. Before we start, remember what we covered about python basics. Python is a general purpose programming language that is popular in data science. Broadcasting lets numpy combine arrays of different shapes in a single operation. Okay so basically matrix multiplication with numpy is the foundation of linear algebra in machine learning. The shape of an array tells us how many rows and columns it has, and reshape changes it. Indexing and slicing let us select parts of an array, just like with Python lists. Okay so basically random number generation in numpy is useful for simulations and for initializing model weights. Vectorized operations apply a calculation to every element of an array without writing a for loop. So that is a quick summary of numpy arrays. The notebook is linked below, happy coding."
+ },
+ {
+  "video_id": "code-02",
+  "educator": "Code and Coffee",
+  "title": "Pandas dataframes",
+  "published": "2023-05-16",
+  "views": 16678,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Grab a coffee, today we are coding. In this video we look at pandas dataframes. Before we start, remember what we covered about numpy arrays. NumPy gives us the array, a fast container for numbers that is much quicker than a Python list. We load a CSV file into a dataframe with read_csv and inspect it with head and describe. Okay so basically each column of a dataframe is built on a numpy array, so vectorized operations are fast. Filtering rows with a boolean condition is one of the most common pandas operations. Missing values are common in real data, and pandas lets us drop them or fill them in. Okay so basically groupby splits the data into groups, applies a function such as the mean, and combines the results. A pandas dataframe is a table of rows and columns, similar to a spreadsheet. So that is a quick summary of pandas dataframes. The notebook is linked below, happy coding."
+ },
+ {
+  "video_id": "code-03",
+  "educator": "Code and Coffee",
+  "title": "Linear regression",
+  "published": "2023-06-07",
+  "views": 17934,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Grab a coffee, today we are coding. In this video we look at linear regression. Before we start, remember what we covered about probability. Probability measures how likely an event is, on a scale from zero to one. We measure the error with the mean squared error, the average of the squared residuals. Okay so basically linear regression assumes a roughly linear relationship, which a scatter plot can check. Linear regression fits a straight line that predicts a continuous target from input features. The residual is the difference between the actual value and the predicted value. Okay so basically the model learns a weight for each feature and a bias term, also called the intercept. The best weights can be found with the normal equation or with gradient descent. So that is a quick summary of linear regression. The notebook is linked below, happy coding."
+ },
+ {
+  "video_id": "code-04",
+  "educator": "Code and Coffee",
+  "title": "Logistic regression",
+  "published": "2023-06-29",
+  "views": 8619,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Grab a coffee, today we are coding. In this video we look at logistic regression. Before we start, remember what we covered about gradient descent. Gradient descent is an optimization algorithm that minimizes a loss function step by step. The weights of logistic regression can be interpreted as changes in the log odds. Okay so basically we train logistic regression by minimizing the cross entropy loss with gradient descent. Despite its name, logistic regression is used for classification and not for regression. The sigmoid function squashes any number into a probability between zero and one. Okay so basically logistic regression is a classification model that predicts the probability of a class. Logistic regression is a strong baseline before trying more complex classifiers. So that is a quick summary of logistic regression. The notebook is linked below, happy coding."
+ },
+ {
+  "video_id": "code-05",
+  "educator": "Code and Coffee",
+  "title": "Model evaluation",
+  "published": "2023-07-28",
+  "views": 13992,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Grab a coffee, today we are coding. In this video we look at model evaluation. Before we start, remember what we covered about overfitting and regularization. Overfitting happens when a model memorizes the training data and fails on new data. Cross validation trains and tests the model several times on different folds of the data. Okay so basically the ROC curve and the area under it summarise performance across all decision thresholds. We split the data into a training set and a test set to estimate performance on new data. Accuracy can be misleading when the classes are imbalanced. Okay so basically precision tells us how many predicted positives are correct, and recall tells us how many positives we found. The confusion matrix counts true positives, false positives, true negatives and false negatives. So that is a quick summary of model evaluation. The notebook is linked below, happy coding."
+ },
+ {
+  "video_id": "code-06",
+  "educator": "Code and Coffee",
+  "title": "Decision trees and random forests",
+  "published": "2023-08-11",
+  "views": 6808,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Grab a coffee, today we are coding. In this video we look at decision trees and random forests. Before we start, remember what we covered about model evaluation. We split the data into a training set and a test set to estimate performance on new data. Deep decision trees overfit easily, so we limit their depth. Okay so basically gradient boosting builds trees one after another, each correcting the errors of the previous ones. Averaging many trees reduces variance, which is why random forests overfit less. A decision tree splits the data with a sequence of yes or no questions about the features. Okay so basically feature importance from a random forest shows which features the model relies on. Each split is chosen to make the groups purer, measured with gini impurity or entropy. So that is a quick summary of decision trees and random forests. The notebook is linked below, happy coding."
+ },
+ {
+  "video_id": "code-07",
+  "educator": "Code and Coffee",
+  "title": "K-means clustering",
+  "published": "2023-09-08",
+  "views": 23642,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Grab a coffee, today we are coding. In this video we look at k-means clustering. Before we start, remember what we covered about decision trees and random forests. A decision tree splits the data with a sequence of yes or no questions about the features. K-means assigns every point to the nearest of k centroids and then moves each centroid to the mean of its points. Okay so basically clustering is used for customer segmentation and for grouping similar documents. Clustering is unsupervised learning, because there are no labels to predict. Choosing k is hard, and the elbow method and the silhouette score can help. Okay so basically k-means uses euclidean distance, so features should be scaled first. K-means can get stuck in a poor solution, so we run it several times with different starts. So that is a quick summary of k-means clustering. The notebook is linked below, happy coding."
+ },
+ {
+  "video_id": "code-08",
+  "educator": "Code and Coffee",
+  "title": "Neural networks",
+  "published": "2023-10-02",
+  "views": 10847,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Grab a coffee, today we are coding. In this video we look at neural networks. Before we start, remember what we covered about principal component analysis. Principal component analysis, or PCA, reduces the number of dimensions while keeping most of the variance. Activation functions such as relu and sigmoid let the network learn non linear patterns. Okay so basically a neural network is made of layers of neurons, and each neuron computes a weighted sum followed by an activation function. A network with hidden layers can approximate very complex functions. We train neural networks with gradient descent by minimizing a loss function. Okay so basically frameworks like PyTorch and TensorFlow make building neural networks easier. Logistic regression is like a neural network with a single neuron and a sigmoid activation. So that is a quick summary of neural networks. The notebook is linked below, happy coding."
+ },
+ {
+  "video_id": "ai-01",
+  "educator": "AI Simplified",
+  "title": "Overfitting and regularization",
+  "published": "2023-06-13",
+  "views": 2720,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to AI Simplified. In this video we look at overfitting and regularization. Before we start, remember what we covered about logistic regression. Logistic regression is a classification model that predicts the probability of a class. We detect overfitting by comparing the training error with the validation error. In simple words, regularization adds a penalty on large weights to keep the model simpler. More data, simpler models and early stopping all help reduce overfitting. Overfitting happens when a model memorizes the training data and fails on new data. In simple words, l2 regularization, also called ridge, shrinks all weights smoothly towards zero. The bias variance tradeoff explains why simple models underfit and complex models overfit. So that is a quick summary of overfitting and regularization. Subscribe for the next part of the deep learning series."
+ },
+ {
+  "video_id": "ai-02",
+  "educator": "AI Simplified",
+  "title": "Model evaluation",
+  "published": "2023-06-26",
+  "views": 6140,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to AI Simplified. In this video we look at model evaluation. Before we start, remember what we covered about overfitting and regularization. Overfitting happens when a model memorizes the training data and fails on new data. Cross validation trains and tests the model several times on different folds of the data. In simple words, the F1 score is the harmonic mean of precision and recall. The ROC curve and the area under it summarise performance across all decision thresholds. Precision tells us how many predicted positives are correct, and recall tells us how many positives we found. In simple words, accuracy can be misleading when the classes are imbalanced. We split the data into a training set and a test set to estimate performance on new data. So that is a quick summary of model evaluation. Subscribe for the next part of the deep learning series."
+ },
+ {
+  "video_id": "ai-03",
+  "educator": "AI Simplified",
+  "title": "Decision trees and random forests",
+  "published": "2023-07-09",
+  "views": 11872,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to AI Simplified. In this video we look at decision trees and random forests. Before we start, remember what we covered about model evaluation. We split the data into a training set and a test set to estimate performance on new data. Deep decision trees overfit easily, so we limit their depth. In simple words, each split is chosen to make the groups purer, measured with gini impurity or entropy. Feature importance from a random forest shows which features the model relies on. A decision tree splits the data with a sequence of yes or no questions about the features. In simple words, gradient boosting builds trees one after another, each correcting the errors of the previous ones. A random forest trains many decision trees on random samples of the data and averages them. So that is a quick summary of decision trees and random forests. Subscribe for the next part of the deep learning series."
+ },
+ {
+  "video_id": "ai-04",
+  "educator": "AI Simplified",
+  "title": "K-means clustering",
+  "published": "2023-07-27",
+  "views": 90625,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to AI Simplified. In this video we look at k-means clustering. Before we start, remember what we covered about decision trees and random forests. A decision tree splits the data with a sequence of yes or no questions about the features. K-means assigns every point to the nearest of k centroids and then moves each centroid to the mean of its points. In simple words, clustering is unsupervised learning, because there are no labels to predict. We repeat the assignment and update steps until the centroids stop moving. K-means can get stuck in a poor solution, so we run it several times with different starts. In simple words, clustering is used for customer segmentation and for grouping similar documents. K-means uses euclidean distance, so features should be scaled first. So that is a quick summary of k-means clustering. Subscribe for the next part of the deep learning series."
+ },
+ {
+  "video_id": "ai-05",
+  "educator": "AI Simplified",
+  "title": "Principal component analysis",
+  "published": "2023-08-14",
+  "views": 7974,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to AI Simplified. In this video we look at principal component analysis. Before we start, remember what we covered about k-means clustering. Clustering is unsupervised learning, because there are no labels to predict. The first principal component points in the direction of the largest variance. In simple words, principal component analysis, or PCA, reduces the number of dimensions while keeping most of the variance. The explained variance ratio tells us how much information each component keeps. PCA is useful for visualizing high dimensional data in two dimensions. In simple words, pCA relies on linear algebra, specifically the eigenvectors of the covariance matrix. PCA finds new axes called principal components that are combinations of the original features. So that is a quick summary of principal component analysis. Subscribe for the next part of the deep learning series."
+ },
+ {
+  "video_id": "ai-06",
+  "educator": "AI Simplified",
+  "title": "Neural networks",
+  "published": "2023-08-31",
+  "views": 7739,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to AI Simplified. In this video we look at neural networks. Before we start, remember what we covered about principal component analysis. Principal component analysis, or PCA, reduces the number of dimensions while keeping most of the variance. Logistic regression is like a neural network with a single neuron and a sigmoid activation. In simple words, frameworks like PyTorch and TensorFlow make building neural networks easier. Neural networks need a lot of data and are prone to overfitting, so regularization such as dropout helps. A network with hidden layers can approximate very complex functions. In simple words, activation functions such as relu and sigmoid let the network learn non linear patterns. A neural network is made of layers of neurons, and each neuron computes a weighted sum followed by an activation function. So that is a quick summary of neural networks. Subscribe for the next part of the deep learning series."
+ },
+ {
+  "video_id": "ai-07",
+  "educator": "AI Simplified",
+  "title": "Backpropagation",
+  "published": "2023-09-14",
+  "views": 4370,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to AI Simplified. In this video we look at backpropagation. Before we start, remember what we covered about neural networks. A neural network is made of layers of neurons, and each neuron computes a weighted sum followed by an activation function. The forward pass computes predictions, and the backward pass computes gradients. In simple words, vanishing gradients make deep networks hard to train with sigmoid activations. Relu activations and careful weight initialization help gradients flow through deep networks. Automatic differentiation in modern frameworks performs backpropagation for us. In simple words, backpropagation computes the gradient of the loss with respect to every weight in a neural network. It applies the chain rule from calculus, layer by layer, from the output back to the input. So that is a quick summary of backpropagation. Subscribe for the next part of the deep learning series."
+ },
+ {
+  "video_id": "ai-08",
+  "educator": "AI Simplified",
+  "title": "Convolutional neural networks",
+  "published": "2023-10-10",
+  "views": 4094,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to AI Simplified. In this video we look at convolutional neural networks. Before we start, remember what we covered about backpropagation. Backpropagation computes the gradient of the loss with respect to every weight in a neural network. Convolutional neural networks, or CNNs, are neural networks designed for images. In simple words, transfer learning reuses a CNN pretrained on a large dataset for a new task. CNNs share weights across the image, so they need far fewer parameters than a fully connected network. A convolution slides a small filter over the image to detect patterns such as edges. In simple words, cNNs are trained with backpropagation and gradient descent like any neural network. Pooling layers reduce the size of the feature maps and make the network more robust. So that is a quick summary of convolutional neural networks. Subscribe for the next part of the deep learning series."
+ },
+ {
+  "video_id": "ai-09",
+  "educator": "AI Simplified",
+  "title": "Transformers and attention",
+  "published": "2023-10-30",
+  "views": 10239,
+  "url": "",
+  "synthetic": true,
+  "transcript": "Welcome to AI Simplified. In this video we look at transformers and attention. Before we start, remember what we covered about convolutional neural networks. Convolutional neural networks, or CNNs, are neural networks designed for images. Transformers replaced recurrent neural networks for most language tasks because they train in parallel. In simple words, self attention computes queries, keys and values with matrix multiplication. Attention lets every word in a sentence look at every other word and decide what is relevant. Transformers are neural networks built around the attention mechanism. In simple words, word embeddings represent words as vectors so that similar words are close together. Positional encoding tells the transformer the order of the words. So that is a quick summary of transformers and attention. Subscribe for the next part of the deep learning series."
+ }
+]

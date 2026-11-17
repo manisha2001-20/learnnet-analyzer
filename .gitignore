@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+.env
+backend/data/user_videos.json
+
+# Node
+node_modules/
+frontend/dist/
