@@ -6,6 +6,16 @@ LearnNet turns educational YouTube transcripts into a **knowledge network**. It 
 
 ![Learning path](docs/screenshots/path.png)
 
+## Problem statement & objectives
+
+Learners on YouTube face thousands of educational videos with no map of which concepts depend on which, or which
+educator explains a topic first and best. This project aims to:
+1. extract the concepts taught in each transcript and embed transcripts semantically;
+2. group videos into topics and build concept and prerequisite graphs across channels;
+3. generate beginner-to-advanced learning paths for a goal concept;
+4. score each educator's pedagogical influence and predict the level and topic of new videos;
+5. present all of this in an interactive web dashboard.
+
 ## Features
 
 | Feature | Implementation |
@@ -20,6 +30,15 @@ LearnNet turns educational YouTube transcripts into a **knowledge network**. It 
 | Pedagogical influence | Coverage, foundational centrality, *precedence-network PageRank* (who taught a concept first), breadth and reach |
 | Prediction | Logistic-regression level classifier (cross-validated at build time), nearest-centroid topic cluster and similar videos for a new transcript |
 | Dashboard | 7 pages: Overview, Concept graph, Clusters, Learning path, Educators, Predict, Add video. Responsive, light and dark themes |
+
+## Workflow
+
+1. **Ingest:** load transcripts (bundled corpus, YouTube URL or pasted text) and clean them.
+2. **Concepts & embeddings:** extract key-phrases; embed transcripts with Sentence-Transformers (or TF-IDF + SVD offline).
+3. **Topics:** cluster videos with K-means (k chosen by silhouette score).
+4. **Graphs:** build the concept graph (co-occurrence + similarity) and the RefD prerequisite DAG.
+5. **Analysis:** compute difficulty, learning paths and educator influence; train the level classifier.
+6. **Serve:** FastAPI exposes the results; the React dashboard visualises them.
 
 ## Data
 
